@@ -64,21 +64,18 @@ This bot demonstrates many of the core features of Botkit:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-if (!process.env.token) {
-    console.log('Error: Specify token in environment');
-    process.exit(1);
-}
-
 var Botkit = require('botkit');
-var os = require('os');
 
 var controller = Botkit.slackbot({
-    debug: true,
+  debug: false
+  //include "log: false" to disable logging
+  //or a "logLevel" integer from 0 to 7 to adjust logging verbosity
 });
 
-var bot = controller.spawn({
-    token: process.env.token
-}).startRTM();
+// connect the bot to a stream of messages
+controller.spawn({
+  token: 'xoxb-111716916304-TLZJ8IpdObXT1e0BrXi0SYF4',
+}).startRTM()
 
 
 controller.hears(['hello', 'hi'], 'direct_message,direct_mention,mention', function(bot, message) {
