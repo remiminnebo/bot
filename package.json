@@ -1,0 +1,23 @@
+{
+  "name": "neptulonbot",
+  "version": "1.0.0",
+  "description": "neptulon slack bot",
+  "main": "bot.js",
+  "scripts": {
+    "start": "token=TLZJ8IpdObXT1e0BrXi0SYF4 node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bot",
+    "slack"
+  ],
+  "author": "remi minnebo",
+  "license": "ISC",
+  "dependencies": {
+    "botkit": "^0.4.3",
+    "express": "^4.14.0"
+  },
+  "engines": {
+    "node": "7.2.0"
+  }
+}
