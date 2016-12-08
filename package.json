@@ -4,7 +4,7 @@
   "description": "neptulon slack bot",
   "main": "bot.js",
   "scripts": {
-    "start": "token=TLZJ8IpdObXT1e0BrXi0SYF4 node bot.js",
+    "start": "token=xoxb-111716916304-TLZJ8IpdObXT1e0BrXi0SYF4 node bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
